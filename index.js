@@ -18,7 +18,7 @@ async function run(){
    
     try{
       await client.connect();
-      const database = client.db('bike_niche')
+      const database = client.db('Project-300')
       const productsCollection = database.collection('products')
       const ordersCollection = database.collection('orders')
       const usersCollection = database.collection('users')
@@ -170,7 +170,7 @@ run().catch(console.dir)
 
 
 app.get('/', (req, res) => {
-    res.send('Hello!')
+    res.send('Hello world')
   })
   
 app.listen(port, () => {
